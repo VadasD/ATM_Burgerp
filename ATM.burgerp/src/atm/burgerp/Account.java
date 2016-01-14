@@ -32,7 +32,7 @@ public class Account {
      */
     private ArrayList<Transaction> transactions;
     
-    public void Account(String name, User holder, Bank theBank){
+    public Account(String name, User holder, Bank theBank){
         //set basic values
         this.name = name;
         this.holder = holder;
@@ -41,8 +41,8 @@ public class Account {
         //init the list of transactios
         this.transactions = new ArrayList<>();
         //add the holder and the bank
-        holder.addAccount(this);
-        theBank.addAccount(this);
+        //holder.addAccount(this);
+        //theBank.addAccount(this);
     } 
     /**
      * ACCSseot mehtod for accoutn uuis
